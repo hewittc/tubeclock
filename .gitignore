@@ -1,3 +1,5 @@
 # temporary kicad files
 pcb/*.bak
 pcb/*-cache.lib
+pcb/lib/*.bak
+pcb/lib/*-cache.lib
