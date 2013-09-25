@@ -24,7 +24,7 @@ $(TARGET).elf: $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 	$(SIZE) $(TARGET).elf
 
-%.hex: %.elf
+$(TARGET).hex: $(TARGET).elf
 	$(OBJCOPY) -O ihex $< $@
 
 %.o: %.c
