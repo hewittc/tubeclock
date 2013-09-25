@@ -11,12 +11,11 @@ SOURCES  = main.c
 CC       = msp430-gcc
 SIZE     = msp430-size
 OBJCOPY  = msp430-objcopy
-JTAG     = msp430-jtag
 
 CFLAGS   = -mmcu=$(MCU) -g -Os -Wall -Wunused -std=c99 -pedantic
 LDFLAGS  = -mmcu=$(MCU) -Wl,-Map=$(TARGET).map
 
-OBJECTS     = $(SOURCES:.c=.o)
+OBJECTS  = $(SOURCES:.c=.o)
 
 all: $(TARGET).elf $(TARGET).hex
 
